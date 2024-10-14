@@ -12,16 +12,16 @@ import {
 // creating a router
 const router = createBrowserRouter([
     {
+        path: '/dashboard',
+        element: <div><Dashboard /></div> 
+    },
+    {
         path: '/',
         element: <div><Login /></div> 
     },
     {
         path: '/register',
         element: <div><Register /></div> 
-    },
-    {
-        path: '/dashboard',
-        element: <div><Dashboard /></div> 
     }
 ])
 
