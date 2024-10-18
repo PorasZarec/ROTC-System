@@ -9,7 +9,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 // Imported Images and video
 import img from "../../../../Assets/user (3).jpg";
-import img2 from "../../../../Assets/user (2).jpg";
+import img2 from "../../../../Assets/image(9).png";
 import vid from "../../../../../LoginAssets/video.mp4";
 
 const Top = () => {
@@ -36,6 +36,7 @@ const Top = () => {
 			</div>
 
 			<div className="cardSection flex">
+
 				<div className="rightCard flex">
 					<h1>Create and sell extraordinary products</h1>
 					<p>
@@ -55,6 +56,7 @@ const Top = () => {
 
 				<div className="leftCard flex">
 					<div className="main flex">
+
 						<div className="textDiv">
 							<h1>My Stat</h1>
 
@@ -76,6 +78,7 @@ const Top = () => {
 						<div className="imgDiv">
 							<img src={img2} alt="Image Name" />
 						</div>
+                        
 						{/* later use of this card..... */}
 						{/* <div className="sideBarCard">
                             <BsQuestionCircle className="icon" />
