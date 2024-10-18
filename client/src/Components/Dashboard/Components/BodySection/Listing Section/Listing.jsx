@@ -4,9 +4,6 @@ import "./listing.css";
 // imported Images
 
 import img from "../../../../Assets/image(5).png";
-import img1 from "../../../../Assets/image.png";
-import img2 from "../../../../Assets/image(1).png";
-import img3 from "../../../../Assets/image(2).png";
 
 import user from "../../../../Assets/user (2).jpg";
 
@@ -38,19 +35,19 @@ const Listing = () => {
 
 				<div className="singleItem">
 					<AiOutlineHeart className="icon" />
-					<img src={img1} alt="Image Name" />
+					<img src={img} alt="Image Name" />
                     <h3>Coffee Plant</h3>
 				</div>
 
 				<div className="singleItem">
 					<AiOutlineHeart className="icon" />
-					<img src={img2} alt="Image Name" />
+					<img src={img} alt="Image Name" />
                     <h3>Superman</h3>
 				</div>
 
 				<div className="singleItem">
 					<AiFillHeart className="icon" />
-					<img src={img3} alt="Image Name" />
+					<img src={img} alt="Image Name" />
                     <h3>Spider Man</h3>
 				</div>
 			</div>
@@ -72,10 +69,9 @@ const Listing = () => {
                             <img src={user} alt="User Image" />
                         </div>
                         <div className="cardText">
-                            <span>
-                                14.556 Plant sold <br/>
-                                <small>
-                                    21 sellers <span className="date">7 Days</span>
+                            <span>14.556 Plant sold<br/>
+                                <small>21 sellers
+                                    <span className="date">7 Days</span>
                                 </small>
                             </span>
                         </div>
@@ -99,10 +95,9 @@ const Listing = () => {
                             <img src={user} alt="User Image" />
                         </div>
                         <div className="cardText">
-                            <span>
-                                12,556 Plant sold <br/>
-                                <small>
-                                    26 sellers <span className="date">31 Days</span>
+                            <span>12,556 Plant sold<br/>
+                                <small>26 sellers
+                                    <span className="date">31 Days</span>
                                 </small>
                             </span>
                         </div>

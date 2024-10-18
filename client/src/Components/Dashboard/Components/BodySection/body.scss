@@ -11,3 +11,11 @@
         align-items: flex-start;
     }
 }
+
+// ========== MEDUA QUERIES ========== //
+
+@media screen and (max-width: 990px) {
+    .bottom {
+        flex-direction: column;
+    }
+}

@@ -7,10 +7,6 @@
   transition: 0.3s ease;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
   --primaryColor: hsl(94, 55%, 56%);
   --hoverColor: hsl(93, 75%, 76%);
@@ -26,9 +22,9 @@
   --h1FontSize: 1.5rem;
   --h2FontSize: 1.25rem;
   --h3FontSize: 1rem;
-  --normalFontSize: .938rem;
-  --smallFontSize: .813rem;
-  --smallestFontSize: .75rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
 }
 
 .flex {
@@ -59,7 +55,8 @@ li {
   cursor: pointer;
 }
 
-img, video {
+img,
+video {
   height: auto;
   width: 100%;
 }
@@ -95,7 +92,8 @@ img, video {
   background: var(--paleGreen);
 }
 
-.loginPage, .registerPage {
+.loginPage,
+.registerPage {
   height: 100vh;
   width: 100%;
   margin: auto;
@@ -103,7 +101,8 @@ img, video {
   overflow: hidden;
   box-shadow: 0 7px 50px rgb(214, 223, 213);
 }
-.loginPage .container, .registerPage .container {
+.loginPage .container,
+.registerPage .container {
   height: 75vh;
   width: 60%;
   margin: auto;
@@ -111,7 +110,8 @@ img, video {
   border-radius: 10px;
   background: hsl(0, 0%, 91%);
 }
-.loginPage .container .videoDiv, .registerPage .container .videoDiv {
+.loginPage .container .videoDiv,
+.registerPage .container .videoDiv {
   position: relative;
   display: flex;
   flex-basis: 50%;
@@ -125,10 +125,14 @@ img, video {
   border-radius: 10px;
   overflow: hidden;
 }
-.loginPage .container .videoDiv video, .loginPage .container .videoDiv .footerDiv, .registerPage .container .videoDiv video, .registerPage .container .videoDiv .footerDiv {
+.loginPage .container .videoDiv video,
+.loginPage .container .videoDiv .footerDiv,
+.registerPage .container .videoDiv video,
+.registerPage .container .videoDiv .footerDiv {
   position: absolute;
 }
-.loginPage .container .videoDiv video, .registerPage .container .videoDiv video {
+.loginPage .container .videoDiv video,
+.registerPage .container .videoDiv video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -138,20 +142,24 @@ img, video {
   left: 0;
   right: 0;
 }
-.loginPage .container .videoDiv .textDiv, .registerPage .container .videoDiv .textDiv {
+.loginPage .container .videoDiv .textDiv,
+.registerPage .container .videoDiv .textDiv {
   position: relative;
 }
-.loginPage .container .videoDiv .textDiv .title, .registerPage .container .videoDiv .textDiv .title {
+.loginPage .container .videoDiv .textDiv .title,
+.registerPage .container .videoDiv .textDiv .title {
   color: var(--whiteColor);
   font-size: 35px;
   font-weight: 800;
 }
-.loginPage .container .videoDiv .textDiv p, .registerPage .container .videoDiv .textDiv p {
+.loginPage .container .videoDiv .textDiv p,
+.registerPage .container .videoDiv .textDiv p {
   color: var(--whiteColor);
   padding: 1rem;
   font-weight: 400;
 }
-.loginPage .container .videoDiv .footerDiv, .registerPage .container .videoDiv .footerDiv {
+.loginPage .container .videoDiv .footerDiv,
+.registerPage .container .videoDiv .footerDiv {
   bottom: 10px;
   padding: 0 1rem;
   height: 60px;
@@ -163,10 +171,12 @@ img, video {
           backdrop-filter: blur(1px);
   border-radius: 10px;
 }
-.loginPage .container .videoDiv .footerDiv .text, .registerPage .container .videoDiv .footerDiv .text {
+.loginPage .container .videoDiv .footerDiv .text,
+.registerPage .container .videoDiv .footerDiv .text {
   color: var(--whiteColor);
 }
-.loginPage .container .videoDiv .footerDiv .btn, .registerPage .container .videoDiv .footerDiv .btn {
+.loginPage .container .videoDiv .footerDiv .btn,
+.registerPage .container .videoDiv .footerDiv .btn {
   background: var(--whiteColor);
   color: var(--primaryColor);
   padding: 0.8rem 1.5rem;
@@ -174,56 +184,67 @@ img, video {
   font-weight: 400;
   transition: 0.3s ease;
 }
-.loginPage .container .videoDiv .footerDiv .btn:hover, .registerPage .container .videoDiv .footerDiv .btn:hover {
+.loginPage .container .videoDiv .footerDiv .btn:hover,
+.registerPage .container .videoDiv .footerDiv .btn:hover {
   background: var(--hoverColor);
   color: var(--blackColor);
 }
-.loginPage .container .formDiv, .registerPage .container .formDiv {
+.loginPage .container .formDiv,
+.registerPage .container .formDiv {
   flex-basis: 50%;
   margin: auto;
   flex-direction: column;
   gap: 1.5rem;
   transform: translate(-1rem);
 }
-.loginPage .container .formDiv .headerDiv, .registerPage .container .formDiv .headerDiv {
+.loginPage .container .formDiv .headerDiv,
+.registerPage .container .formDiv .headerDiv {
   text-align: center;
   padding: 1.5rem 0;
 }
-.loginPage .container .formDiv .headerDiv img, .registerPage .container .formDiv .headerDiv img {
+.loginPage .container .formDiv .headerDiv img,
+.registerPage .container .formDiv .headerDiv img {
   width: 60px;
   padding-bottom: 0.5rem;
 }
-.loginPage .container .formDiv .headerDiv h3, .registerPage .container .formDiv .headerDiv h3 {
+.loginPage .container .formDiv .headerDiv h3,
+.registerPage .container .formDiv .headerDiv h3 {
   font-size: 25px;
   color: var(--blackColor);
   font-weight: 600;
 }
-.loginPage .container .formDiv .form, .registerPage .container .formDiv .form {
+.loginPage .container .formDiv .form,
+.registerPage .container .formDiv .form {
   gap: 1rem;
 }
-.loginPage .container .formDiv .inputDiv .icon, .registerPage .container .formDiv .inputDiv .icon {
+.loginPage .container .formDiv .inputDiv .icon,
+.registerPage .container .formDiv .inputDiv .icon {
   color: var(--greyText);
 }
-.loginPage .container .formDiv .inputDiv input, .registerPage .container .formDiv .inputDiv input {
+.loginPage .container .formDiv .inputDiv input,
+.registerPage .container .formDiv .inputDiv input {
   background: none;
   outline: none;
   border: none;
   width: 200px;
 }
-.loginPage .container .formDiv .inputDiv label, .registerPage .container .formDiv .inputDiv label {
+.loginPage .container .formDiv .inputDiv label,
+.registerPage .container .formDiv .inputDiv label {
   color: var(--blackColor);
   font-weight: 400;
   font-size: 14px;
   padding: 0.5rem 0;
   display: block;
 }
-.loginPage .container .formDiv .inputDiv .input, .registerPage .container .formDiv .inputDiv .input {
+.loginPage .container .formDiv .inputDiv .input,
+.registerPage .container .formDiv .inputDiv .input {
   gap: 0.5rem;
   padding: 1rem;
   background: var(--inputColor);
   border-radius: 10px;
 }
-.loginPage .container .formDiv .btn, .registerPage .container .formDiv .btn {
+.loginPage .container .formDiv .btn,
+.registerPage .container .formDiv .btn {
   padding: 0.8rem;
   background: var(--primaryColor);
   border-radius: 10px;
@@ -236,25 +257,30 @@ img, video {
   gap: 0.5rem;
   transition: 0.3s ease;
 }
-.loginPage .container .formDiv .btn .icon, .registerPage .container .formDiv .btn .icon {
+.loginPage .container .formDiv .btn .icon,
+.registerPage .container .formDiv .btn .icon {
   font-size: 25px;
   transition: 0.3s ease;
 }
-.loginPage .container .formDiv .btn:hover, .registerPage .container .formDiv .btn:hover {
+.loginPage .container .formDiv .btn:hover,
+.registerPage .container .formDiv .btn:hover {
   background: var(--hoverColor);
   color: var(--blackColor);
 }
-.loginPage .container .formDiv .btn:hover .icon, .registerPage .container .formDiv .btn:hover .icon {
+.loginPage .container .formDiv .btn:hover .icon,
+.registerPage .container .formDiv .btn:hover .icon {
   color: var(--blackColor);
   transform: translateX(5px);
 }
-.loginPage .container .formDiv .forgotPassword, .registerPage .container .formDiv .forgotPassword {
+.loginPage .container .formDiv .forgotPassword,
+.registerPage .container .formDiv .forgotPassword {
   font-size: 13px;
   color: var(--blackColor);
   opacity: 0.7;
   text-align: center;
 }
-.loginPage .container .formDiv .forgotPassword a, .registerPage .container .formDiv .forgotPassword a {
+.loginPage .container .formDiv .forgotPassword a,
+.registerPage .container .formDiv .forgotPassword a {
   text-decoration: underline;
   cursor: pointer;
   opacity: 1;
@@ -272,4 +298,30 @@ img, video {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgb(194, 194, 194);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=App.css.map */

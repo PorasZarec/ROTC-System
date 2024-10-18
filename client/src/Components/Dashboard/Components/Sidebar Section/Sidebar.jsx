@@ -22,7 +22,7 @@ const Sidebar = () => {
 		<div className="sideBar grid">
 			<div className="logoDiv flex">
 				<img src={logo} alt="Image Name" />
-				<h2>SVCC ROTC</h2>
+				<h2>ROTC</h2>
 			</div>
 
 			<div className="menuDiv">
