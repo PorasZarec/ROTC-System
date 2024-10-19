@@ -15,6 +15,8 @@ import { BiTrendingUp } from "react-icons/bi";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { BsCreditCard2Front } from "react-icons/bs";
 
+import { BiLogOutCircle } from "react-icons/bi";
+
 import { BsQuestionCircle } from "react-icons/bs";
 
 const Sidebar = () => {
@@ -88,6 +90,13 @@ const Sidebar = () => {
 							<span className="smallText">Billing</span>
 						</a>
 					</li>
+
+					<div className="btnContainer">
+						<button type="submit" className="btn flex">
+							<BiLogOutCircle className="icon" />
+							<span className="smallText">Logout</span>
+						</button>
+					</div>
 				</ul>
 			</div>
 

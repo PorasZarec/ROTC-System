@@ -1,11 +1,12 @@
 :root {
   --primaryColor: hsl(94, 55%, 56%);
-  --hoverColor: hsl(93, 75%, 76%);
+  --hoverColor: #bdf094;
   --paleGreen: hsl(96, 75%, 89%);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
-  --greyText: hsl(0, 0%, 75%);
-  --bgColor: hsl(113, 11%, 85%);
+  --text-color: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
   --textColor: hsl(240, 1%, 48%);
   /* Font and Typography */
@@ -20,7 +21,7 @@
 
 .sideBar {
   background: var(--whiteColor);
-  box-shadow: 1px 0px 4px --greyText;
+  box-shadow: 1px 0px 4px var(--greyText);
   width: 18%;
   height: 100%;
   gap: 3rem;
@@ -31,7 +32,7 @@
   cursor: pointer;
 }
 .sideBar .logoDiv img {
-  max-width: 40px;
+  max-width: 30px;
   margin-right: 0.5rem;
   background: var(--inputColor);
   border-radius: 2px;
@@ -46,6 +47,21 @@
   font-size: var(--h3FontSize);
   color: var(--blackColor);
   padding: 0 1.5rem 1.5rem;
+}
+.sideBar .menuDiv .btnContainer,
+.sideBar .settingsDiv .btnContainer {
+  padding: 0 1rem 1.5rem;
+}
+.sideBar .menuDiv .btnContainer .btn,
+.sideBar .settingsDiv .btnContainer .btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.sideBar .menuDiv .btnContainer .btn .icon,
+.sideBar .settingsDiv .btnContainer .btn .icon {
+  margin: 0.2rem;
 }
 .sideBar .menuDiv .menuLists .listItem,
 .sideBar .settingsDiv .menuLists .listItem {
@@ -68,7 +84,7 @@
 .sideBar .settingsDiv .menuLists .listItem .menuLink {
   color: var(--greyText);
   font-weight: 500;
-  transition: 0;
+  transition: 0s ease;
 }
 .sideBar .menuDiv .menuLists .listItem .menuLink .icon,
 .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
@@ -169,24 +185,37 @@
   .sideBar .logoDiv h2 {
     display: none;
   }
-  .sideBar .menuDiv .divTitle, .sideBar .menuDiv .smallText, .sideBar .settingsDiv .divTitle, .sideBar .settingsDiv .smallText {
+  .sideBar .menuDiv .divTitle,
+  .sideBar .menuDiv .smallText,
+  .sideBar .settingsDiv .divTitle,
+  .sideBar .settingsDiv .smallText {
     display: none;
   }
-  .sideBar .menuDiv .menuLists .listItem .menuLink, .sideBar .settingsDiv .menuLists .listItem .menuLink {
+  .sideBar .menuDiv .menuLists .listItem .menuLink,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink {
     justify-content: center;
   }
-  .sideBar .menuDiv .menuLists .listItem .menuLink .icon, .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
+  .sideBar .menuDiv .menuLists .listItem .menuLink .icon,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
     font-size: var(--h1FontSize);
   }
 }
 @media screen and (max-width: 390px) {
-  .sideBar .menuDiv .menuLists .listItem, .sideBar .settingsDiv .menuLists .listItem {
+  .sideBar .menuDiv,
+  .sideBar .settingsDiv {
+    text-align: center;
+    margin: auto;
+  }
+  .sideBar .menuDiv .menuLists .listItem,
+  .sideBar .settingsDiv .menuLists .listItem {
     padding: 0.2rem 0.5rem;
   }
-  .sideBar .menuDiv .menuLists .listItem .menuLink, .sideBar .settingsDiv .menuLists .listItem .menuLink {
+  .sideBar .menuDiv .menuLists .listItem .menuLink,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink {
     justify-content: center;
   }
-  .sideBar .menuDiv .menuLists .listItem .menuLink .icon, .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
+  .sideBar .menuDiv .menuLists .listItem .menuLink .icon,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
     font-size: var(--h2FontSize);
   }
 }/*# sourceMappingURL=sidebar.css.map */

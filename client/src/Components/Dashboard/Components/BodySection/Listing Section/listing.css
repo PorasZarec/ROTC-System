@@ -146,6 +146,6 @@
     flex-direction: column;
   }
   .listingSection .sellers .card {
-    flex-direction: row;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=listing.css.map */

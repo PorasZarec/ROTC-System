@@ -24,7 +24,7 @@ const Activity = () => {
 				<div className="singleCustomer flex">
 					<img src={user} alt="Customer Image" />
 					<div className="customerDetails">
-						<span className="name">Ola Mamamiya</span>
+						<span className="name">Ola Marta</span>
 						<small>Ordered a new plant</small>
 					</div>
 					<div className="duration">2 min ago</div>
@@ -33,7 +33,7 @@ const Activity = () => {
 				<div className="singleCustomer flex">
 					<img src={user} alt="Customer Image" />
 					<div className="customerDetails">
-						<span className="name">Ola Mamamiya</span>
+						<span className="name">Ola Marta</span>
 						<small>Ordered a new plant</small>
 					</div>
 					<div className="duration">2 min ago</div>
@@ -42,7 +42,7 @@ const Activity = () => {
 				<div className="singleCustomer flex">
 					<img src={user} alt="Customer Image" />
 					<div className="customerDetails">
-						<span className="name">Ola Mamamiya</span>
+						<span className="name">Ola Marta</span>
 						<small>Ordered a new plant</small>
 					</div>
 					<div className="duration">2 min ago</div>
@@ -51,7 +51,7 @@ const Activity = () => {
 				<div className="singleCustomer flex">
 					<img src={user} alt="Customer Image" />
 					<div className="customerDetails">
-						<span className="name">Ola Mamamiya</span>
+						<span className="name">Ola Marta</span>
 						<small>Ordered a new plant</small>
 					</div>
 					<div className="duration">2 min ago</div>
@@ -60,7 +60,7 @@ const Activity = () => {
 				<div className="singleCustomer flex">
 					<img src={user} alt="Customer Image" />
 					<div className="customerDetails">
-						<span className="name">Ola Mamamiya</span>
+						<span className="name">Ola Marta</span>
 						<small>Ordered a new plant</small>
 					</div>
 					<div className="duration">2 min ago</div>
